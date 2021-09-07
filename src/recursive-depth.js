@@ -13,8 +13,7 @@ import { NotImplementedError } from '../extensions/index.js';
  *
  */
 export default class DepthCalculator {
-  calculateDepth(arr) {
-    calculateDepth(arr) {
+      calculateDepth(arr) {
     let n = 1;
     arr.forEach((elem)=>  {
       if (Array.isArray(elem)) {
@@ -23,6 +22,5 @@ export default class DepthCalculator {
       }
     });
     return n;
-  }
   }
 }
