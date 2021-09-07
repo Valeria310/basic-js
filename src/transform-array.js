@@ -14,6 +14,9 @@ import { NotImplementedError } from '../extensions/index.js';
  * 
  */
 export default function transform(arr) {
+  if(!(arr instanceof Array)) {
+    throw new Error("'arr' parameter must be an instance of the Array!")
+  }
   let copyArr = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] == `--discard-next`) {
