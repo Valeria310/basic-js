@@ -20,7 +20,7 @@ export default {
       !Number.isInteger(position)
     ) {
       this.chain = [];
-      throw Error();
+      throw new Error("You can't remove incorrect link!");
     }
     this.chain.splice(position - 1, 1);
     return this;
