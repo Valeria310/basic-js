@@ -24,7 +24,7 @@ export default function repeater(str, options) {
   }
   str = String(str);
 
-  addition = String(options.addition);
+  let addition = String(options.addition);
   if (options.addition === undefined) {
     addition = "";
   }
